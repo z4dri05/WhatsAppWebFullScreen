@@ -9,7 +9,7 @@ Enhance your WhatsApp Web experience with this UserScript by [z4dri05]. Eliminat
 
 2. **Add the UserScript:**
 
-   **Get it on Greasy Fork**
+   **Get it on Greasy Fork**   
 [![Get it on Greasy Fork](https://img.shields.io/badge/Get_it_on-Greasy_Fork-green?style=for-the-badge&logo=greasyfork)](https://greasyfork.org/es/scripts/486226-whatsapp-web-full-screen)
 
  - You can directly install the UserScript by [clicking here](https://github.com/z4dri05/WhatsAppWebFullScreen/raw/main/WhatsAppFullScreen.user.js). This link should be recognized by your Violentmonkey extension, and you will see a button to install it.

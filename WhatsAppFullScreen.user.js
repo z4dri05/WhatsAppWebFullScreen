@@ -8,15 +8,47 @@
 // @grant        GM_addStyle
 // @run-at       document-start
 // ==/UserScript==
-GM_addStyle(`
-div[id="app"] > div > *, div[data-testid="status-v3-main-panel"] > div {
-    top: 0 !important;
-    width: 100% !important;
-    max-width: 100vw !important;
-    height: 100% !important;
-}
 
-#wa-popovers-bucket {
-    display: none !important;
-}
-`);
+(function() {
+    'use strict';
+
+    GM_addStyle(`
+        html, body {
+            /* Fill the window and disable scrolling */
+            height: 100% !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            background: #000 !important;
+        }
+
+        /* The trick: move #app 20px upwards to hide the top bar */
+        #app {
+            position: fixed !important;
+            top: -20px !important; /* Adjust this value to hide the desired height of the top bar */
+            left: 0 !important;
+            width: 100vw !important;
+            height: calc(100vh + 19px) !important;
+            /* Adding 19px prevents cropping at the bottom */
+            margin: 0 !important;
+            padding: 0 !important;
+            max-width: 100% !important;
+        }
+
+        .app-wrapper-web,
+        .two,
+        ._1jJ70,
+        ._3ArsE,
+        ._2gzeB,
+        ._1C6Zl {
+            /* Ensure everything adjusts to 100% */
+            width: 100% !important;
+            height: 100% !important;
+            max-width: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            background: #000 !important;
+        }
+    `);
+})();

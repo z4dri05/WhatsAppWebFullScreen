@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WhatsApp Web Full Screen
 // @description  Disable margins and use all available screen space for chats on WhatsApp Web.
-// @version      1.1
+// @version      1.2
 // @author       https://github.com/z4dri05
 // @supportURL   https://github.com/z4dri05/WhatsAppWebFullScreen
 // @match        https://web.whatsapp.com/*
